@@ -1,4 +1,4 @@
-# vue_mikeu
+# university_community
 
 > A Vue.js project
 
