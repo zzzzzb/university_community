@@ -15,6 +15,6 @@
     width: 100%;
     height: 100%;
     float: left;
-    background: #F0F0F0;
+    background: #f0f0f08c;
   }
 </style>

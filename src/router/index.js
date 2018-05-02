@@ -10,6 +10,7 @@ import submit from '@/components/submit'
 import log_reg from '@/components/log_reg'
 import my_details from '@/components/my_details'
 import details from '@/components/details'
+import check from '@/components/check'
 
 Vue.use(Router)
 
@@ -68,6 +69,11 @@ export default new Router({
       path: '/details/:id',
       name: details,
       component: details
+    },
+    {
+      path: '/check',
+      name: check,
+      component: check
     }
   ]
 })
