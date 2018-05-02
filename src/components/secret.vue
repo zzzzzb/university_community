@@ -4,7 +4,7 @@
       <li v-for="item in secrets">
         <div class="head">
           <div class="photo">
-            <img src="../../static/nefu.jpg" alt="">
+            <img :src="item.photo" alt="">
           </div>
           <div class="title">
             <span class="name">某同学</span>
@@ -42,6 +42,14 @@
         axios.get('http://www.zhuzhibo.net/index.php?/message/get_secret')
           .then(function (res) {
             let data = res.data.data;
+            for (let i = 0; i < data.length; i++) {
+              if (data[i].university === '东北林业大学') {
+                data[i].photo = '../../static/nefu.jpg'
+              }
+              if (data[i].university === '北京交通大学') {
+                data[i].photo = '../../static/bju.jpg'
+              }
+            }
             _self.secrets = data;
           })
           .catch(function (error) {

@@ -23,7 +23,7 @@
     <div class="content">
       <div v-if="isLogin" class="log">
         <div class="input">
-          <input type="number" placeholder="输入手机号" v-model="phone">
+          <input type="text" placeholder="输入手机号" v-model="phone">
           <i class="phone"></i>
         </div>
         <div class="input">
@@ -33,7 +33,7 @@
       </div>
       <div v-else class="reg">
         <div class="phone-code">
-          <input type="number" placeholder="输入手机号" v-model="phone">
+          <input type="text" placeholder="输入手机号" v-model="phone">
           <i class="phone"></i>
           <button @click="checkphone" v-if="flag">发送验证码</button>
           <button v-else>已发送</button>
