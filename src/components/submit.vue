@@ -55,7 +55,7 @@
                   alert(response.data.errormsg);
                 } else {
                   _self.$router.push({
-                    path: '/home/comp'
+                    path: '/'
                   })
                 }
               })
